@@ -11,7 +11,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #ffffff;
+    background: linear-gradient(-135deg, #DFC9B4 10%, #ffffff);
+}
+
+.background {
+    background-color: #c71616;
 }
 
 .gradasi{
