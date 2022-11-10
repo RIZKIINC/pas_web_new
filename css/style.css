@@ -11,7 +11,17 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #F9F5F2;
+    background: #ffffff;
+}
+
+.gradasi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom right, #DFC9B4, #ffffff, #DFC9B4);
 }
 
 .container {
