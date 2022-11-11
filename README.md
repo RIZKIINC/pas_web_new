@@ -7,10 +7,10 @@
 4. Tara
 
 # Tugas:
-<p>Rizki</p>
+<p1>Rizki</p1>
 - Login
 
-<p>Munawir</p>
+<p1>Munawir</p1>
 - Dashboard
 
 <h3>Preview</h3>
