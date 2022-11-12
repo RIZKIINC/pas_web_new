@@ -19,16 +19,21 @@
 <p>Link cari FontAwesome https://fontawesome.com/icons/</p>
 
 --------------------------------------------------------
+# Preview
 
-<h3>Preview</h3>
+<h3>Login</h3>
 <p>Login.html</p>
 
 <img src="Preview/Login.png" />
 
-<p>Index.htlm</p>
+--------------------------------------------------------
+<h3>Dashboard</h3>
+<p>Index.html</p>
 
 <img src="Preview/index.png" />
 
-<p>Dash.htlm</p>
+<p>Dash.html</p>
 
 <img src="Preview/dash.png" />
+
+--------------------------------------------------------
