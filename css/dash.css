@@ -61,9 +61,20 @@ body{
     transition-property: left;
   }
   
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar {
+  -ms-overflow-style: none;  /* IE dan Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
   .sidebar .profile_image{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 10px;
   }
   
@@ -110,6 +121,14 @@ body{
     color: #572908;
   }
   
+  #check:checked ~ .sidebar .profile_image{
+    position: fixed;
+  }
+
+  #check:checked ~ .sidebar h4{
+    position: fixed;
+  }
+
   #check:checked ~ .sidebar{
     left: -190px;
   }
