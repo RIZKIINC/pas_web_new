@@ -21,6 +21,14 @@
 --------------------------------------------------------
 
 <h3>Preview</h3>
-<p>Login</p>
+<p>Login.html</p>
 
 <img src="Preview/Login.png" />
+
+<p>Index.htlm</p>
+
+<img src="Preview/index.png" />
+
+<p>Dash.htlm</p>
+
+<img src="Preview/dash.png" />
