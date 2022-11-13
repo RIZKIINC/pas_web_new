@@ -28,10 +28,6 @@
 
 --------------------------------------------------------
 <h3>Dashboard</h3>
-<p>Index.html</p>
-
-<img src="Preview/index.png" />
-
 <p>Dash.html</p>
 
 <img src="Preview/dash.png" />
