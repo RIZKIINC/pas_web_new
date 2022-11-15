@@ -1,12 +1,13 @@
 body{
     margin: 0;
+    background-color:#E1CFC1;
     padding: 0;
     font-family: "Roboto", sans-serif;
   }
   
 .header{
     position: fixed;
-    background: #22242A;
+    background: #6A4334;
     padding: 20px;
     width: 100%;
     height: 30px;
@@ -18,7 +19,7 @@ body{
 }
 
   .left_area h3{
-    color: #572908;
+    color: #AC7349;
     margin: 0;
     text-transform: uppercase;
     font-size: 22px;
@@ -30,18 +31,19 @@ body{
   }
   
   .logout_btn{
-    padding: 5px;
-    background: #572908;
+    padding: 7px;
+    background: #ffffff;
     text-decoration: none;
     float: right;
-    margin-top: -30px;
+    margin-top: -25px;
     margin-right: 40px;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 15px;
     font-weight: 600;
-    color: #fff;
+    color: rgb(0, 0, 0);
     transition: 0.5s;
     transition-property: background;
+    align-items: center;
   }
   
   .logout_btn:hover{
@@ -49,14 +51,14 @@ body{
   }
   
   .sidebar {
-    background: #2f323a;
+    background: #E1CFC1;
     margin-top: 70px;
     padding-top: 10px;
     position: fixed;
     overflow-y: scroll;
     left: 0;
     width: 250px;
-    height: 88%;
+    height: 85vh;
     transition: 0.5s;
     transition-property: left;
   }
@@ -78,27 +80,36 @@ body{
     margin-bottom: 10px;
   }
   
-  .sidebar h4{
-    color: #ccc;
-    margin-top: 0;
-    margin-bottom: 20px;
+  .title_icon h4{
+    color: #AC7349;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+    padding-bottom: 20px;
   }
-
+  
+  .title_icon span{
+    color: #ffffff;
+    padding-right: 5px;
+  }
   
   .sidebar a{
-    color: #fff;
+    color:#6A4334;
     display: block;
     width: 100%;
     line-height: 60px;
     text-decoration: none;
     padding-left: 40px;
     box-sizing: border-box;
-    transition: 0.5s;
-    transition-property: background;
   }
   
   .sidebar a:hover{
     background: #572908;
+    color: #fff;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
   }
   
   .sidebar i{
@@ -113,7 +124,6 @@ body{
     left: 20px;
     font-size: 20px;
     margin: 5px 0;
-    transition: 0.5s;
     transition-property: color;
   }
   
@@ -121,7 +131,7 @@ body{
     color: #572908;
   }
   
-  #check:checked ~ .sidebar .profile_image{
+  /*#check:checked ~ .sidebar .profile_image{
     position: fixed;
   }
 
@@ -141,24 +151,83 @@ body{
     font-size: 20px;
     margin-left: 170px;
     width: 80px;
-  }
+  }*/
   
   .content{
-    margin-left: 250px;
-    background: url(Logo_dasboard.png) no-repeat;
-    background-position: center;
-    background-size: cover;
+    margin-left: 253px;
+    background-color: #fff;
     height: 100vh;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 100px;
-    transition: 0.5s;
   }
   
-  #check:checked ~ .content{
+  /*#check:checked ~ .content{
     margin-left: 60px;
-  }
+  }*/
   
   #check{
     display: none;
   } 
+
+/* Table content*/
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+    border: 1px solid #000;
+    border-collapse: collapse;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
