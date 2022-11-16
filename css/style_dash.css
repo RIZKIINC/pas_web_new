@@ -183,7 +183,7 @@ body{
   
   th, td {
     text-align: left;
-    padding: 16px;
+    padding: 3px;
     border: 1px solid #000;
     border-collapse: collapse;
   }
@@ -191,7 +191,31 @@ body{
   tr:nth-child(even) {
     background-color: #f2f2f2;
   }
-  
+
+  #editBtn{
+    height: 30px;
+    width: 100%;
+    background-color: #ffee58;
+    border: solid 1px #888;
+    border-radius: 5px;
+  }
+
+  #deleteBtn{
+    height: 30px;
+    width: 100%;
+    background-color: #ff4848;
+    border: solid 1px #888;
+    border-radius: 5px;
+  }
+
+  #editBtn:hover {
+    background-color: #ff9900;
+  }
+
+  #deleteBtn:hover {
+    background-color: #ff0000;
+  }
+
   /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -209,12 +233,22 @@ body{
 }
 
 /* Modal Content */
-.modal-content {
+.edit-modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 50%;
+  border-radius: 7px;
+}
+
+.delete-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 7px;
 }
 
 /* The Close Button */
