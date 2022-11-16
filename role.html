@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Kopi Pas</title>
     <!-- <link rel="stylesheet" href="css/dash.css"> -->
-    <link rel="stylesheet" href="css/style_dash.css">
-    <link rel="stylesheet" href="font/fontawesome/css/all.css" />   
+    <link rel="stylesheet" href="css/style_role.css">
+    <link rel="stylesheet" href="font/fontawesome/css/all.css" />
   </head>
   <body>
 
@@ -43,9 +43,40 @@
     <!--sidebar end-->
 
     <div class="content">
+      <h2>Role</h2>
         <table>
           <tr>
-            <th width="50%">+</th>
+            <td style="vertical-align: middle">
+              <button id="add_roleBtn"><i class="fa-solid fa-plus"></i></button>
+              <!-- Trigger/Open The Modal -->
+              <div id="add_Modal" class="modal">
+              <!-- Modal content -->
+              <div class="add-modal-content">
+                  <span class="close">&times;</span>
+                  <p>Some text in the Modal..</p>
+              </div>
+            </div>
+          
+            <!--Search-->
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+            <script>
+              function myFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("mySearch");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myMenu");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                  a = li[i].getElementsByTagName("a")[0];
+                  if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                  } else {
+                    li[i].style.display = "none";
+                  }
+                }
+              }
+            </script>
+            </td>
           </tr>
         </table>
 
@@ -87,6 +118,23 @@
     </div>
     
     <script>
+        // Get the modal add role button
+        var modal = document.getElementById("add_Modal");
+        var btn = document.getElementById("add_roleBtn");
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
         // Get the modal edit button
         var modal = document.getElementById("edit_Modal");
         var btn = document.getElementById("editBtn");

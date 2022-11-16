@@ -131,29 +131,8 @@ body{
     color: #572908;
   }
   
-  /*#check:checked ~ .sidebar .profile_image{
-    position: fixed;
-  }
 
-  #check:checked ~ .sidebar h4{
-    position: fixed;
-  }
-
-  #check:checked ~ .sidebar{
-    left: -190px;
-  }
-  
-  #check:checked ~ .sidebar a span{
-    display: none;
-  }
-  
-  #check:checked ~ .sidebar a{
-    font-size: 20px;
-    margin-left: 170px;
-    width: 80px;
-  }*/
-  
-  .content{
+.content{
     margin-left: 253px;
     background-color: #fff;
     height: 100vh;
@@ -169,3 +148,126 @@ body{
   #check{
     display: none;
   } 
+
+/* Table content*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 3px;
+    border: 1px solid #000;
+    border-collapse: collapse;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  #add_roleBtn{
+    height: 30px;
+    width: 30px;
+    background-color: #87fd50;
+    border: solid 1px #888;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 70%;
+  }
+
+  #add_roleBtn:hover {
+    background-color: #33ff00;
+  }
+
+  /* Style the search box */
+#mySearch {
+  width: 20%;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: center;
+}
+
+  #editBtn{
+    height: 30px;
+    width: 100%;
+    background-color: #ffee58;
+    border: solid 1px #888;
+    border-radius: 5px;
+  }
+
+  #editBtn:hover {
+    background-color: #ff9900;
+  }
+
+  #deleteBtn{
+    height: 30px;
+    width: 100%;
+    background-color: #ff4848;
+    border: solid 1px #888;
+    border-radius: 5px;
+  }
+
+  #deleteBtn:hover {
+    background-color: #ff0000;
+  }
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.edit-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 7px;
+}
+
+.delete-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 7px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
